@@ -22,7 +22,7 @@ const Header = () => {
                     <p className={styles.text}>Nos últimos 2 anos estudei e trabalhei com desenvolvimento Mobile e Web, onde desenvolvi aplicações em React Native, Api{`'`}s em Node.js e páginas Web utilizando Next.js e a plataforma Vercel.</p>
                     <div className={styles.divButton}>
                         <a href="/Rubens_Caio.pdf" download="Rubens_Caio.pdf"><div className={styles.buttonD}>Download CV</div></a>
-                        <div className={styles.buttonE}>Vamos conversar</div>
+                        <a href="#contact"><div className={styles.buttonE}>Vamos conversar</div></a>
                     </div>
                 </div>
 
