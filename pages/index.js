@@ -65,7 +65,7 @@ export default function Home() {
               <div>
                 <p><FaNodeJs /> Node.js</p>
                 <p><SiJavascript/> Kotlin</p>
-                <p><img src="/go.png" width={40} /> </p>
+                <p><Image src="/go.png" alt="Vercel Logo" width={30} height={30} /> </p>
                 
               </div>
               <div>

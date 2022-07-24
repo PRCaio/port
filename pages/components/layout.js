@@ -55,10 +55,10 @@ export default function Layout({ children }) {
         
             <nav className={styles.contact2}>
                 <nav className={styles.contact} >
-                    <a href="https://www.linkedin.com/in/rubens-caio-3a0845111/" target="_blank" rel="external"><BsLinkedin size={23}/></a>
-                    <a href="#https://www.facebook.com/rubens.caio/" target="_blank" rel="external"><AiOutlineMail size={23}/></a>
-                    <a href="https://api.whatsapp.com/send?phone=5521976941694" target="_blank" rel="external"><BsWhatsapp size={23} /></a>
-                    <a href="https://github.com/PRCaio" target="_blank" rel="external"><AiFillGithub size={23}/></a>
+                    <a href="https://www.linkedin.com/in/rubens-caio-3a0845111/" rel="external"><BsLinkedin size={23}/></a>
+                    <a href="#https://www.facebook.com/rubens.caio/"  rel="external"><AiOutlineMail size={23}/></a>
+                    <a href="https://api.whatsapp.com/send?phone=5521976941694"  rel="external"><BsWhatsapp size={23} /></a>
+                    <a href="https://github.com/PRCaio" rel="external"><AiFillGithub size={23}/></a>
                     
                 </nav>
             </nav>
