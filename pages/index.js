@@ -137,7 +137,7 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             <h2>Serviços de consultoria</h2>
-            <p>No último ano prestei serviços para pequenos negocios utilizando as tecnologias abaixo:</p>
+            <p>No último ano prestei serviços para pequenos negócios utilizando as tecnologias abaixo:</p>
             <div className={styles.experience}>
               <div>
                 <p><AiFillHtml5 /> Html</p>
