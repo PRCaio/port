@@ -10,6 +10,7 @@ import { IoLogoJavascript } from 'react-icons/io'
 import { SiJavascript } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { GrGolang } from 'react-icons/gr'
+import LottieControl from './components/lottie'
 
 
 
@@ -26,13 +27,16 @@ export default function Home() {
       <Header />
       {/* <NaviBar />  */}
 
-
+      
 
       <main className={styles.main}>
+      <hr></hr>
         <div>
+          
           <p className={styles.text2}>Vamos falar </p>
           <h1 className={styles.title2}>Sobre minha experiência</h1>
         </div>
+       <div className={styles.lottie}> <LottieControl /></div>
         {/* <h1 className={styles.title} id="about">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -43,7 +47,7 @@ export default function Home() {
         </p> */}
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <div className={styles.card}>
             <h2>Desenvolvimento Frontend</h2>
             <div className={styles.experience}>
               <div>
@@ -57,9 +61,9 @@ export default function Home() {
                 <p><DiReact/> React Native</p>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <div className={styles.card}>
             <h2>Desenvolvimento Backend</h2>
             <div className={styles.experience}>
               <div>
@@ -74,8 +78,8 @@ export default function Home() {
                
               </div>
             </div>
-          </a>
-
+          </div>
+        
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}

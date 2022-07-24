@@ -67,7 +67,7 @@ export default function Layout({ children }) {
         {/* {footer} */}
         <div className={styles2.container2}>
 
-            <footer className={styles.footer}>
+            {/* <footer className={styles.footer}>
 
                 <a
                     href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -79,7 +79,7 @@ export default function Layout({ children }) {
                         <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
                     </span>
                 </a>
-            </footer>
+            </footer> */}
         </div>
     </>
 }

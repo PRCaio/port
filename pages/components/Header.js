@@ -7,7 +7,7 @@ const Header = () => {
             <div className={styles.header}>
 
                 <picture className={styles.perfil}>
-                    <source media="(max-width: 868px )" srcSet="/perfil4.png" type="image/png" width={700} alt="perfil"/>
+                    <source className={styles.perfil} media="(max-width: 868px )" srcSet="/perfil4.png" type="image/png" width={700} alt="perfil" />
 
                     <img className={styles.perfil} src="/perfil3.png" alt="perfil"></img>
 
@@ -17,16 +17,16 @@ const Header = () => {
 
 
                 <div className={styles.header2}>
-                    <p className={styles.text}>Rubens Caio </p>
+                    <p className={styles.text}><strong>Rubens Caio</strong> </p>
                     <h2 className={styles.title2}>Mestre em Matemática e Desenvolvedor Full Stack</h2>
                     <p className={styles.text}>Nos últimos 2 anos estudei e trabalhei com desenvolvimento Mobile e Web, onde desenvolvi aplicações em React Native, Api{`'`}s em Node.js e páginas Web utilizando Next.js e a plataforma Vercel.</p>
                     <div className={styles.divButton}>
-                    <a href="/Rubens_Caio.pdf" download="Rubens_Caio.pdf"><div className={styles.buttonD}>Download CV</div></a>
-                    <div className={styles.buttonE}>Vamos conversar</div>
-                </div>
+                        <a href="/Rubens_Caio.pdf" download="Rubens_Caio.pdf"><div className={styles.buttonD}>Download CV</div></a>
+                        <div className={styles.buttonE}>Vamos conversar</div>
+                    </div>
                 </div>
 
-                
+
             </div>
         </header>
     )
