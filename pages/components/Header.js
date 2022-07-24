@@ -26,7 +26,7 @@ const Header = () => {
                     </div>
                 </div>
 
-
+                <a href="#about"><img src="/scroll.gif" className={styles.scroll} size="15rem" alt="perfil"></img></a>
             </div>
         </header>
     )

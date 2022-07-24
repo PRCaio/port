@@ -1,9 +1,9 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import * as animationData from './skills.json'
+import * as animationData from './../../public/services.json'
 
  
-export default class LottieControl extends React.Component {
+export default class LottieServices extends React.Component {
  
   constructor(props) {
     super(props);

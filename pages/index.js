@@ -1,17 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import styles2 from '../styles/Layout.module.css'
-import Header from './components/Header'
-import NaviBar from './components/NaviBar'
-import { AiFillHtml5 } from 'react-icons/ai'
-import { DiCss3, DiReact, DiPostgresql } from 'react-icons/di'
-import { IoLogoJavascript } from 'react-icons/io'
-import { SiJavascript } from 'react-icons/si'
-import { FaNodeJs } from 'react-icons/fa'
-import { GrGolang } from 'react-icons/gr'
-import LottieControl from './components/lottie'
-
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import styles2 from '../styles/Layout.module.css';
+import Header from './components/Header';
+import NaviBar from './components/NaviBar';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiCss3, DiReact, DiPostgresql } from 'react-icons/di';
+import { IoLogoJavascript } from 'react-icons/io';
+import { SiJavascript } from 'react-icons/si';
+import { FaNodeJs } from 'react-icons/fa';
+import { GrGolang } from 'react-icons/gr';
+import LottieControl from './components/lottie';
+import LottieBook from './components/lottieBook';
+import LottieServices from './components/lottieServices';
+import Contact from './components/Contact';
+import LottieContact from './components/LottieContact';
 
 
 export default function Home() {
@@ -28,13 +31,42 @@ export default function Home() {
       {/* <NaviBar />  */}
 
       
-
+      
       <main className={styles.main}>
-      <hr></hr>
-        <div>
-          
-          <p className={styles.text2}>Vamos falar </p>
-          <h1 className={styles.title2}>Sobre minha experiência</h1>
+      
+        <div>          
+        <h1 className={styles.title3} id="about">Formação</h1>
+        <LottieBook/>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h2>Mestrado em Matemática</h2>
+            <div className={styles.experience}>
+              <div>
+                <p>Mestrado profissional pela UNIRIO, conluído no ano de 2020.</p>
+              </div>
+              
+            </div>
+          </div>
+        
+          <div className={styles.card}>
+            <h2>Graduação em Matemática</h2>
+            <div className={styles.experience}>
+              <div>
+                <p>Licenciatura em Matemática pela FEUC, conluído em 2016.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <h2>Ensino médio Técnico em Informática</h2>
+            <div className={styles.experience}>
+              <div>
+                <p>Ensino médio com foco na construção de programas na linguagem VB, conluído em 2011.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <h1 className={styles.title3} id="experience">Experiência</h1>
         </div>
        <div className={styles.lottie}> <LottieControl /></div>
         {/* <h1 className={styles.title} id="about">
@@ -56,15 +88,15 @@ export default function Home() {
                 <p><SiJavascript/> JavaScript</p>
               </div>
               <div>
-                <p><DiReact/> React</p>
-                <p> Next.js</p>
+                <p><DiReact/> React.js</p>
+                
                 <p><DiReact/> React Native</p>
               </div>
             </div>
           </div>
-
+        
           <div className={styles.card}>
-            <h2>Desenvolvimento Backend</h2>
+            <h2>Desenvolvimento Backend BD{`'`}s</h2>
             <div className={styles.experience}>
               <div>
                 <p><FaNodeJs /> Node.js</p>
@@ -79,8 +111,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        
-          <a
+          
+          {/* <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
           >
@@ -96,11 +128,39 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </a> */}
         </div>
-      </main>
 
-      <hr></hr>
+                  
+        <h1 className={styles.title3}id="services">Serviços</h1>
+        <LottieServices/>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h2>Serviços de consultoria</h2>
+            <p>No último ano prestei serviços para pequenos negocios utilizando as tecnologias abaixo:</p>
+            <div className={styles.experience}>
+              <div>
+                <p><AiFillHtml5 /> Html</p>
+                <p>< DiCss3/> Css</p>
+                <p><SiJavascript/> JavaScript</p>
+              </div>
+              <div>
+                <p><DiReact/> React.js</p>
+                
+                <p><DiReact/> React Native</p>
+              </div>
+            </div>
+          </div>
+        
+         
+                 
+        
+        </div>
+        <h1 className={styles.title3} id="contact">Contato</h1>
+      </main>
+      <LottieContact/>
+          <Contact />
+      
     </div>
   )
 }

@@ -15,6 +15,7 @@
 
 .hamburger {
     display: none;
+    
 }
 
 .bar {
@@ -118,11 +119,23 @@
         width: 300px;
     }
 
+    .contact3 {
+        position: relative;
+        flex-direction: column;
+        color:#0E76A8;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: left;
+    }
+    
+
 @media only screen and (max-width: 868px) {
     .nav {
         background-color:  #0E76A8;
         width: 100%;
-        padding: 0.4rem 1.7rem;
+        padding: 0.4rem 0.0rem;
         left: 50%;
         transform: translateX(-50%);
         bottom: 0rem;
@@ -144,6 +157,11 @@
           color: #fafafa;
         
         }
+
+        .hr {
+            width: 100%;
+            color: #0E76A8;
+        }
       
       
         .nav a:hover {
@@ -151,6 +169,7 @@
         }
 
         .navbar {
+            position: absolute;
             width: 0;
             height: 0;
             background-color: white;
