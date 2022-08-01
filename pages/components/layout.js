@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         <header className={styles2.header}>
             <nav className={styles.navbar}>
                 <nav className={styles.nav} >
-                    <a href="#" ><abbr title="Início" ><AiOutlineHome size={23}/></abbr></a>
+                    <Link href="#"><a><abbr title="Início" ><AiOutlineHome size={23}/></abbr></a></Link>
                     <a href="#about">
                     <abbr title="Sobre" ><AiOutlineUser size={23}/></abbr></a>
                     <a href="#experience"><abbr title="Experiência" ><BiBookBookmark size={23}/></abbr></a>

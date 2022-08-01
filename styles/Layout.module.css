@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     padding: 0.2rem 10rem ;
-    background-color: #0E76A8;
 }
 
 .hamburger {
@@ -136,13 +135,13 @@
 @media only screen and (max-width: 868px) {
     .nav {
         background-color:  #0E76A8;
-        width: 100%;
+        width: 100.3%;
         padding: 0.4rem 0.0rem;
         left: 50%;
         transform: translateX(-50%);
         bottom: 0rem;
         display: flex;
-        gap: 0.8rm;
+        gap: 0.0rm;
         border-radius: 0rem;
         flex-direction: row;
         position:fixed; 
