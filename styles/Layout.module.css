@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.2rem 10rem ;
+    background-color: #0E76A8;
 }
 
 .hamburger {
@@ -79,6 +80,7 @@
   
     .nav a:hover {
       background: rgba(0, 0, 0, 0.3);
+      border-radius: 0.9rem; 
     }
   
     .navactive {
