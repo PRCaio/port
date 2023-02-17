@@ -15,10 +15,12 @@ import LottieBook from './components/lottieBook';
 import LottieServices from './components/lottieServices';
 import Contact from './components/Contact';
 import LottieContact from './components/LottieContact';
+import Layout from './components/layout';
 
 
 export default function Home() {
   return (
+    <Layout>
     <div className={styles.container}>
       <Head>
 
@@ -30,45 +32,45 @@ export default function Home() {
       <Header />
       {/* <NaviBar />  */}
 
-      
-      
-      <main className={styles.main}>
-      
-        <div>          
-        <h1 className={styles.title3} id="about">Formação</h1>
-        <LottieBook/>
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <h2>Mestrado em Matemática</h2>
-            <div className={styles.experience}>
-              <div>
-                <p>Mestrado profissional pela UNIRIO, conluído no ano de 2020.</p>
-              </div>
-              
-            </div>
-          </div>
-        
-          <div className={styles.card}>
-            <h2>Graduação em Matemática</h2>
-            <div className={styles.experience}>
-              <div>
-                <p>Licenciatura em Matemática pela FEUC, conluído em 2016.</p>
-              </div>
-            </div>
-          </div>
 
-          <div className={styles.card}>
-            <h2>Ensino médio Técnico em Informática</h2>
-            <div className={styles.experience}>
-              <div>
-                <p>Ensino médio com foco na construção de programas na linguagem VB, conluído em 2011.</p>
+
+      <main className={styles.main}>
+          <h1 className={styles.title3} id="about">Formação</h1>
+          <div className={styles.lottie}> <LottieBook style=" z-index:-50;" /></div>
+        <div>
+          
+          <div className={styles.grid}>
+            <div className={styles.card}>
+              <h2>Mestrado em Matemática</h2>
+              <div className={styles.experience}>
+                <div>
+                  <p>Mestrado profissional pela UNIRIO, conluído no ano de 2020.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div className={styles.card}>
+              <h2>Graduação em Matemática</h2>
+              <div className={styles.experience}>
+                <div>
+                  <p>Licenciatura em Matemática pela FEUC, conluído em 2016.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.card}>
+              <h2>Ensino médio Técnico em Informática</h2>
+              <div className={styles.experience}>
+                <div>
+                  <p>Ensino médio com foco na construção de programas na linguagem VB, conluído em 2011.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
           <h1 className={styles.title3} id="experience">Experiência</h1>
         </div>
-       <div className={styles.lottie}> <LottieControl /></div>
+        <div className={styles.lottie}> <LottieControl style=" z-index:-50;" /></div>
         {/* <h1 className={styles.title} id="about">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -84,34 +86,34 @@ export default function Home() {
             <div className={styles.experience}>
               <div>
                 <p><AiFillHtml5 /> Html</p>
-                <p>< DiCss3/> Css</p>
-                <p><SiJavascript/> JavaScript</p>
+                <p>< DiCss3 /> Css</p>
+                <p><SiJavascript /> JavaScript</p>
               </div>
               <div>
-                <p><DiReact/> React.js</p>
-                
-                <p><DiReact/> React Native</p>
+                <p><DiReact /> React.js</p>
+
+                <p><DiReact /> React Native</p>
               </div>
             </div>
           </div>
-        
+
           <div className={styles.card}>
             <h2>Desenvolvimento Backend BD{`'`}s</h2>
             <div className={styles.experience}>
               <div>
                 <p><FaNodeJs /> Node.js</p>
-                <p><SiJavascript/> Kotlin</p>
-                <p><Image src="/go.png" alt="Vercel Logo" width={30} height={30} /> </p>
-                
+                <p><SiJavascript /> Kotlin</p>
+                <p><Image src="/go.png" alt="Vercel Logo" width={30} height={30}  /> </p>
+
               </div>
               <div>
-                <p><DiReact/> MySql</p>
-                <p> <DiPostgresql/>Postgrees</p>
-               
+                <p><DiReact /> MySql</p>
+                <p> <DiPostgresql />Postgrees</p>
+
               </div>
             </div>
           </div>
-          
+
           {/* <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
@@ -131,9 +133,9 @@ export default function Home() {
           </a> */}
         </div>
 
-                  
-        <h1 className={styles.title3}id="services">Serviços</h1>
-        <LottieServices/>
+
+        <h1 className={styles.title3} id="services">Serviços</h1>
+        <div className={styles.lottie}> <LottieServices style=" z-index:-50;" /></div>
         <div className={styles.grid}>
           <div className={styles.card}>
             <h2>Serviços de consultoria</h2>
@@ -141,26 +143,27 @@ export default function Home() {
             <div className={styles.experience}>
               <div>
                 <p><AiFillHtml5 /> Html</p>
-                <p>< DiCss3/> Css</p>
-                <p><SiJavascript/> JavaScript</p>
+                <p>< DiCss3 /> Css</p>
+                <p><SiJavascript /> JavaScript</p>
               </div>
               <div>
-                <p><DiReact/> React.js</p>
-                
-                <p><DiReact/> React Native</p>
+                <p><DiReact /> React.js</p>
+
+                <p><DiReact /> React Native</p>
               </div>
             </div>
           </div>
-        
-         
-                 
-        
+
+
+
+
         </div>
         <h1 className={styles.title3} id="contact">Contato</h1>
       </main>
-      <LottieContact/>
-          <Contact />
-      
+      <LottieContact />
+      <Contact />
+
     </div>
+    </Layout>
   )
 }
