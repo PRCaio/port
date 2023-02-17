@@ -160,7 +160,7 @@ export default function Home() {
         </div>
         <h1 className={styles.title3} id="contact">Contato</h1>
       </main>
-      <LottieContact />
+      <div className={styles.lottie}> <LottieContact style=" z-index:-50;" /></div>
       <Contact />
 
     </div>
