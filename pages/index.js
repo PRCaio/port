@@ -177,7 +177,7 @@ export default function Home() {
               Desenvolvido com html, css e js. Fique a vontade para testar o site abaixo.
             </p>
             <iframe src="/adote/index.html" className={styles.pdf} scrolling="no"></iframe>
-            <h1 className={styles.titleShow} id="services">Projeto comes & Bebes</h1>
+            <h1 className={styles.titleShow} id="services">Projeto Comes & Bebes</h1>
             <p className={styles.descriptionProjects}>
               Esse projeto foi desenvolvido para a InJunior em janeiro de 2023, fui resposável pela parte de edição da conta.
               <br></br>
@@ -190,9 +190,10 @@ export default function Home() {
             <p className={styles.descriptionProjects}>
               Sou responsável por adicionar novas funcionalidades no site do Ciências Sob Tendas.
               <br></br>
-              Desenvolvido com WordPress. Fique a vontade para testar o site abaixo.
+              Desenvolvido com WordPress. 
             </p>
-            <iframe src="http://cienciassobtendas.sites.uff.br/" className={styles.pdf} scrolling="no"></iframe>
+            <img src="/cst.jpeg" alt="Vercel Logo" className={styles.imgProject} />
+            
             
           </div>
 
