@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+main h1{
+    width: 80%;
+}
+#header {
+    background-color: #85CDF5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box; 
+    padding: 0.5rem 0;
+}
+
+#right_div{
+    position: relative;
+    text-align: center;
+}
+
+#left_div {
+    position: relative;
+    text-align: center;
+}
+
+.rhover_effect {
+    background-color: black;
+    width: 5.9rem;
+    height: 0.25rem;
+    border-radius: 3px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: none;
+}
+
+.lhover_effect {
+    background-color: black;
+    width: 8.5rem;
+    height: 0.25rem;
+    border-radius: 3px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: none;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#header a:hover ~ .rhover_effect {
+    display: block;
+}
+
+#header a:hover ~ .lhover_effect {
+    display: block;
+}
+
+#footer {
+    background-color: #232323;
+    color: white;
+    height: 16.875rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#map {
+    width: 15.625rem;
+    height: 10.5rem;
+}
+
+#about_us {
+    width: 23.625rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#adress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#adress_icon {
+    height: 19px;
+}
+
+#telephone_number {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#tel_icon {
+    height: 14px;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#email_icon {
+    height: 11.79px;
+}
+
+#about_button {
+    background-color: #DDB959;
+    border: 0rem;
+    width: 9rem;
+    height: 1.875rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#about_button:hover {
+    background-color: #a38942;
+}
+
+#partnership {
+    width: 10rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 13rem;
+}
+
+#partnership p {
+    padding: 0.3rem 0 0.8rem 0;
+}
+
+#partnership img {
+    height: 104px;
+    width: 104px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#p1 {
+
+width: 70%;
+
+font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+/* or 100% */
+
+text-align: center;
+letter-spacing: 0.155em;
+
+color: #000000;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1 {
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #000000;
+}
+@media screen and (max-width:1190px) {
+    #partnership {
+            padding-left: 5rem;
+        }
+        main h1{
+            width: 100%;
+        }
+        #p1 {
+
+            width: 100%;}
+    }
+    
+    @media screen and (max-width:1060px) {
+    #partnership {
+            padding-left: 0;
+        }
+    }
+    
+    @media screen and (max-width:890px) {
+        #footer {
+            justify-content: space-evenly;
+            gap: 2rem;
+        }
+        #map {
+            display: none;
+    }
+    
+    @media screen and (max-width:676px) {
+        #footer {
+            padding: 0 1rem;
+            gap: 5rem;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        #footer {
+            flex-direction: column;
+            justify-content: center;
+            height: 25rem;
+            gap: 2rem;
+        }
+    
+        #abous_us {
+            margin-top: 1rem;
+        }
+    
+        #partnership {
+            justify-content: center;
+        }
+    } 
+}

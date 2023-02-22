@@ -1,0 +1,731 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    background-color: white;
+}
+
+#header {
+    background-color: #85CDF5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;  /*Importante para o padding*/
+    padding: 0.5rem 0;
+    gap: 1rem;
+}
+
+#right_div{
+    position: relative;
+    text-align: center;
+}
+
+#left_div {
+    position: relative;
+    text-align: center;
+}
+
+.rhover_effect {
+    background-color: black;
+    width: 5.9rem;
+    height: 0.25rem;
+    border-radius: 3px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: none;
+}
+
+.lhover_effect {
+    background-color: black;
+    width: 8.5rem;
+    height: 0.25rem;
+    border-radius: 3px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: none;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#header a:hover ~ .rhover_effect {
+    display: block;
+}
+
+#header a:hover ~ .lhover_effect {
+    display: block;
+}
+
+#section1 {
+    background-color: green;
+    box-sizing: border-box;
+    background-image: url(files/background-lobo.png);
+    /* background-size: 100%; */
+    background-repeat: no-repeat center;
+    background-position: center center; /*IMPORTANTE*/
+    height: 542px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    text-align: center;
+}
+
+#section1 h1 {
+    color: white;
+    font-size: 4.7rem;
+    position: relative;
+    cursor: default;
+    line-height: 80px;
+}
+
+#section1 div {
+    background-color: white;
+    height: 0.25rem;
+    width: 8rem;
+    margin-top: 1.3rem;
+    position: absolute;
+    display: none;
+}
+
+#section1 h1:hover ~ .s1hover_effect {
+    display: block;
+}
+
+#section1 p {
+    color: white;
+    font-size: 1.5rem;
+    width: 40rem;
+    text-align: center;
+}
+
+#section2 {
+    background-color: #2C5680;
+    height: 20.813rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#section2 h2 {
+    font-size: 48px;
+    color: #DDB959;
+}
+
+#section2 p {
+    color: white;
+    text-align: center;
+    line-height: 32.54px;
+    font-size: 24px;
+    width: 64%;
+    margin-bottom: 2rem;
+}
+
+#section3 {
+    background-color: #232323;
+    height: 39.063rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+#section3 h2 {
+    font-size: 48px;
+    color: #DDB959;
+}
+
+#section3 div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0 5rem;  /*Prestar atenção*/
+}
+
+#section3 .column {
+    color: white;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+#section3 .column img {
+    height: 190px;
+    width: 190px;
+}
+
+#section3 .column h3 {
+    font-size: 34px;
+}
+
+#section3 .column p {
+    font-size: 20px;
+}
+
+#section4 {
+    height: 63rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#section4 h2 {
+    font-size: 48px;
+    color: #DDB959;
+    padding: 2rem 0;
+}
+
+#section4 #wolves_example {
+    height: 790px;
+    width: 1174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#wolf_api1 {
+    height: 395px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.box{
+    position: relative;
+    width: 461px;
+    height: 333px;
+}
+
+.back {
+    background-color: rgb(44, 86, 128);
+    position: relative;
+    width: 418px;
+    height: 286px;  
+    border: 3px solid #000;
+    
+}
+
+.img_wolves{
+    position: absolute;
+    width: 426px;
+    height: 296px;
+    right: 0;
+    bottom: 0;
+}
+
+#wolf1_info {
+    width: 461px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 20px;
+    margin-right: 5rem;
+    position: relative;
+}
+
+#wolf1_info h3 {
+    font-size: 36px;
+}
+
+#wolf1_info p:nth-of-type(2) {
+    font-size: 24px;
+}
+
+#wolf_api2 {
+    height: 395px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.back2 {
+    background-color: rgb(44, 86, 128);
+    position: absolute;
+    width: 418px;
+    height: 286px;
+    right: 0;
+    border: 3px solid #000;
+    
+}
+
+.img_wolves2 {
+    position: absolute;
+    width: 426px;
+    height: 296px;
+    left: 0;
+    bottom: 0;
+}
+
+#wolf2_info {
+    width: 461px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    line-height: 20px;
+    margin-left: 5rem;
+}
+
+#wolf2_info h3 {
+    font-size: 36px;
+}
+
+#wolf2_info p:nth-of-type(2) {
+    font-size: 24px;
+    text-align: end;
+}
+
+#footer {
+    background-color: #232323;
+    color: white;
+    height: 16.875rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#map {
+    width: 15.625rem;
+    height: 10.5rem;
+}
+
+#about_us {
+    width: 23.625rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#adress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#adress_icon {
+    height: 19px;
+}
+
+#telephone_number {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#tel_icon {
+    height: 14px;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#email_icon {
+    height: 11.79px;
+}
+
+#about_button {
+    background-color: #DDB959;
+    border: 0rem;
+    width: 9rem;
+    height: 1.875rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#about_button:hover {
+    background-color: #a38942;
+}
+
+#partnership {
+    width: 10rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 13rem;
+}
+
+#partnership p {
+    padding: 0.3rem 0 0.8rem 0;
+}
+
+#partnership img {
+    height: 104px;
+    width: 104px;
+}
+
+@media screen and (max-width:1260px) {
+    #section2 p {
+        width: 85%;
+    }
+
+    /* #wolf_api1 {
+        gap: 2rem;
+    }*/
+
+    #wolf1_info #wolf2_info {
+        margin: 0;
+    }
+
+    /*#wolf1_info p:nth-of-type(2) {
+        width: 100%;
+    } */
+}
+
+@media screen and (max-width:1190px) {
+    #section4 {
+        height: 96rem;
+    }
+    
+    #section4 #wolves_example {
+        height: 84rem;
+        gap: 3rem;
+    }
+    
+    #wolf_api1 {
+        flex-direction: column;
+        height: 50rem;
+        gap: 1rem;
+    }
+
+    #wolf1_info {
+        margin: 0;
+    }
+
+    #wolf_api2 {
+        flex-direction: column;
+        height: 50rem;
+        gap: 1rem;
+    }
+
+    #wolf2_info {
+        margin: 0;
+    }
+    
+    #partnership {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    #section2 p {
+        font-size: 20px;
+    }
+
+    #section3 {
+        height: 32rem;
+    }
+    
+    #section3 div {
+        gap: 1rem;
+    }
+    
+    #section3 .column img {
+        height: 140px;
+        width: 140px;
+    }
+
+    #section3 .column h3 {
+        font-size: 24px;
+    }
+
+    #section3 .column p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    #partnership {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:890px) {
+    #footer {
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        /* height: 30rem; */
+        gap: 2rem;
+    }
+
+    #map {
+        /* margin-top: 1rem;
+        align-self: flex-start; */
+        display: none;
+    }
+
+    /* #about_us {
+        align-self: flex-start;
+    } */
+}
+
+@media screen and (max-width:804px) {
+    #section3 {
+        height: 57rem;
+    }
+}
+
+@media screen and (max-width:783px) {
+    #section2 {
+        gap: 0;
+    }
+    #section2 p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:676px) {
+    #section1 p {
+        width: 30rem;
+    }
+    
+    #section2 p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* #wolf1_info h3 {
+        font-size: 32px;
+    }
+
+    #wolf1_info p:nth-of-type(2) {
+        font-size: 20px;
+    } */
+
+    #footer {
+        padding: 0 1rem;
+        gap: 5rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    #section1 p {
+        width: 20rem;
+    }
+    
+    #section2 {
+        height: 18rem;
+    }
+
+    #section2 p {
+        line-height: 20px;
+    }
+    
+    #section4 {
+        height: 86rem;
+    }
+    
+    #wolf_api1 {
+        height: 34rem;
+    }
+    
+    .box {
+        width: 350px;
+        height: 229px;
+    }
+
+    .back {
+        width: 318px;
+        height: 195px;
+    }
+
+    .img_wolves {
+        width: 324px;
+        height: 206px;
+    }
+    
+    #wolf1_info {
+        width: 350px;
+    }
+
+    #wolf1_info h3 {
+        font-size: 32px;
+    }
+
+    #wolf1_info p:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    #wolf_api2 {
+        height: 34rem;
+    }
+
+    .back2 {
+        width: 318px;
+        height: 195px;
+    }
+
+    .img_wolves2 {
+        width: 324px;
+        height: 206px;
+    }
+
+    #wolf2_info {
+        width: 350px;
+    }
+
+    #wolf2_info h3 {
+        font-size: 32px;
+    }
+
+    #wolf2_info p:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 25rem;
+        gap: 2rem;
+    }
+
+    #abous_us {
+        margin-top: 1rem;
+    }
+
+    #partnership {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #header a {
+        line-height: 25px;
+    }
+    
+    #section3 {
+        height: 96rem;
+    }
+
+    #section3 div {
+        gap: 2.5rem;
+    }
+
+    #section3 .column {
+        gap: 0.5rem;
+    }
+
+    #about_us {
+        width: 16rem;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #header img {
+        width: 80px;
+        height: 93px;
+    }
+
+    #section1 {
+        gap: 1rem;
+    }
+
+    #section1 h1 {
+        width: 250px;
+    }
+
+    #section1 p {
+        width: 250px;
+    }
+
+    #section2 {
+        height: 25rem;
+    }
+
+    #wolf2_info {
+        width: 250px;
+    }
+
+    #section4 {
+        height: 93rem;
+    }
+
+    #section4 h2 {
+        padding: 1rem 0;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #wolves_example {
+        height: 80rem;
+    }
+
+    #wolf_api1 {
+        height: 40rem;
+    }
+
+    .box {
+        width: 250px;
+        height: 198px;
+    }
+
+    .back {
+        width: 224px;
+        height: 172px;
+    }
+
+    .img_wolves {
+        width: 231px;
+        height: 180px;
+    }
+
+    #wolf1_info {
+        width: 250px;
+    }
+
+    #wolf_api2 {
+        height: 40rem;
+    }
+
+    .back2 {
+        width: 224px;
+        height: 172px;
+    }
+
+    .img_wolves2 {
+        width: 231px;
+        height: 180px;
+    }
+}
