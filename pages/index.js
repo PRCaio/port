@@ -209,19 +209,39 @@ export default function Home() {
             </p>
             <div className={styles.presentation3}>
               <img src="/macabre.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
-              
-            
-              <img src="/macabre2.jpeg" alt="Vercel Logo" className={styles.imgProject2}/>
-              
-            
-              <img src="/macabre3.jpeg" alt="Vercel Logo" className={styles.imgProject2}/>
-              
-            
+
+
+              <img src="/macabre2.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
+
+
+              <img src="/macabre3.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
+
+
               <img src="/macabre4.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
-              
+
             </div>
 
-            
+            <h1 className={styles.titleShow} id="services">Casa Solar</h1>
+            <p className={styles.descriptionProjects}>
+              Esse projeto foi desenvolvido em 2022 para o Ciências Sob Tendas(UFF). <br />
+              A casa solar foi desenvolvida para funcionar com a energia solar e também para ser IOT.
+              <br />
+              Através do celular é possível controlar a parte elétrica da casa. A parte elétrica é ligada a um arduino chamado nodeMCU.
+              <br />
+              Desenvolvido com Arduino em linguagem C++.
+            </p>
+            <div className={styles.presentation3}>
+              <img src="/casa.jpeg" alt="Vercel Logo" />
+            </div>
+            <br></br>
+            <div className={styles.presentation3}>
+
+              <video width="420" height="740" autoPlay muted loop >
+                <source src="casasolar.mp4" type="video/mp4" />
+
+              </video>
+            </div>
+
 
             <h1 className={styles.titleShow} id="services">Projeto Lobinhos</h1>
             <p className={styles.descriptionProjects}>
