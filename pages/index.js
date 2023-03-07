@@ -180,7 +180,7 @@ export default function Home() {
             <div className={styles.presentation3}>
               <img src="/davince2.jpeg" alt="Vercel Logo" />
             </div>
-            <h1 className={styles.titleShow} id="services">Projeto Áudio Descrição</h1>
+            <h1 className={styles.titleShow} id="services">Projeto  transcrição de áudio</h1>
             <p className={styles.descriptionProjects}>
               Esse projeto foi desenvolvido em 2022 para fazer a descrição de áudios específicos. <br />
               O programa gera um texto em formato txt com a descrição do áudio selecionado.
