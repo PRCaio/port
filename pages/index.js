@@ -6,7 +6,7 @@ import styles2 from '../styles/Layout.module.css';
 import Header from './components/Header';
 import NaviBar from './components/NaviBar';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { DiCss3, DiReact, DiPostgresql, DiWordpress } from 'react-icons/di';
+import { DiCss3, DiReact, DiPostgresql, DiWordpress, DiPython } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiJavascript } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
@@ -90,9 +90,9 @@ export default function Home() {
             <div className={styles.grid}>
               <div className={styles.card}>
                 <h2>Hackathon BTG - Open Finance - 2022</h2>
-                
+
                 <div className={styles.experience}>
-                
+
                   <div>
                     <p>Evento do BTG em SP para inovações. Fomos a equipe campeã do prêmio Case Secreto, desafio revelado algumas horas antes do final do evento.</p>
                   </div>
@@ -143,6 +143,7 @@ export default function Home() {
                 <div>
                   <p><DiReact /> MySql</p>
                   <p> <DiPostgresql />Postgrees</p>
+                  <p><DiPython />Python</p>
 
                 </div>
               </div>
@@ -168,8 +169,60 @@ export default function Home() {
 
           </div>
           <br></br>
-          <button download="Rubens_Caio.pdf" onClick={() => showProject()} className={styles.buttonS}>{show? "Fechar projetos" : "Ver projetos"}</button>
+          <button download="Rubens_Caio.pdf" onClick={() => showProject()} className={styles.buttonS}>{show ? "Fechar projetos" : "Ver projetos"}</button>
           <div className={show ? styles.presentation2 : styles.presentation}>
+            <h1 className={styles.titleShow} id="services">Projeto Davince</h1>
+            <p className={styles.descriptionProjects}>
+              Esse projeto foi desenvolvido em 2022 como um estudo de automação em Python. <br />O programa desenvolvido faz pesquisa na wikipedia, no google e também abre vídeos no youtube através de comandos de voz. <br />Também é possível programar desenhos dentro da aplicação.
+              <br></br>
+              Desenvolvido em Python.
+            </p>
+            <div className={styles.presentation3}>
+              <img src="/davince2.jpeg" alt="Vercel Logo" />
+            </div>
+            <h1 className={styles.titleShow} id="services">Projeto Áudio Descrição</h1>
+            <p className={styles.descriptionProjects}>
+              Esse projeto foi desenvolvido em 2022 para fazer a descrição de áudios específicos. <br />
+              O programa gera um texto em formato txt com a descrição do áudio selecionado.
+              <br />
+              Desenvolvido em Python.
+            </p>
+
+            <h1 className={styles.titleShow} id="services">Calculadora de áreas e perímetros</h1>
+            <p className={styles.descriptionProjects}>
+              Esse projeto foi desenvolvido em 2021 como estudo da tecnologia. <br />
+              O aplicativo faz cálculos de áreas ou perímetros de polígonos simples.
+              <br />
+              Desenvolvido em React Native.
+            </p>
+            <div className={styles.presentation3}>
+              <img src="/app1.jpg" alt="Vercel Logo" />
+              <img src="/app2.jpg" alt="Vercel Logo" />
+            </div>
+
+            <h1 className={styles.titleShow} id="services">Macabre Stores</h1>
+            <p className={styles.descriptionProjects}>
+              Esse projeto foi desenvolvido em 2022 para o Ciências Sob Tendas(UFF). <br />
+              O aplicativo foi baseado na dissertação de uma aluna que fez parte do CST.
+              <br />
+              Desenvolvido em Expo.
+            </p>
+            <div className={styles.presentation3}>
+              <img src="/macabre.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
+              
+            
+              <img src="/macabre2.jpeg" alt="Vercel Logo" className={styles.imgProject2}/>
+              
+            
+              <img src="/macabre3.jpeg" alt="Vercel Logo" className={styles.imgProject2}/>
+              
+            
+              <img src="/macabre4.jpeg" alt="Vercel Logo" className={styles.imgProject2} />
+              
+            </div>
+
+            
+
             <h1 className={styles.titleShow} id="services">Projeto Lobinhos</h1>
             <p className={styles.descriptionProjects}>
               Esse projeto foi desenvolvido para a InJunior em janeiro de 2023.
@@ -190,11 +243,11 @@ export default function Home() {
             <p className={styles.descriptionProjects}>
               Sou responsável por adicionar novas funcionalidades no site do Ciências Sob Tendas.
               <br></br>
-              Desenvolvido com WordPress. 
+              Desenvolvido com WordPress.
             </p>
             <img src="/cst.jpeg" alt="Vercel Logo" className={styles.imgProject} />
-            
-            
+
+
           </div>
 
 
@@ -224,7 +277,7 @@ export default function Home() {
             <div className={styles.card}>
               <h2>UFF - Ciências Sob Tendas</h2>
               <p>Desenvolver aplicações em React Native, React.js, Arduino, atualizações do site em WordPress e desenho e impressões de material em 3d.</p>
-              
+
             </div>
 
 

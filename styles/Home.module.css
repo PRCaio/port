@@ -332,6 +332,7 @@
 .presentation{
   width: 85vw;
   height: 0vw;
+  border-radius: 3rem;
   background-color: #0E76A8;
   transition: 2s;
   margin-top: 2rem;
@@ -340,28 +341,46 @@
   display: grid;
   justify-content: center;
   
+  
 }
 .imgProject {
   width: 80vw;
   margin-bottom: 2rem;
   text-align: center;
 }
+.imgProject2 {
+  width: 250px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
 .presentation2{
   width: 85vw;
-  
+  min-height: 550px;
+  border-radius: 3rem;
   
   transition: 2s;
-  background-color: #0E76A8;
+  background-color: #0e77a8;
   
   margin-top: 2rem;
   overflow: hidden;
   flex-direction: column;
   display: grid;
-  
+  align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
   padding-top: 1rem;
+}
+
+.presentation3{
+ 
+  background-color: #0e77a8;
+  overflow: hidden;
+  flex-direction: row;
+  display: flex;
+  
+  justify-content: space-around;
+  
 }
 @media only screen and (max-width: 910px) {
   .header2 {
@@ -431,7 +450,25 @@
     padding-bottom: 2rem;
     padding-top: 1rem;
   }
+  .presentation3{
+    width: 100vw;
+    min-height: 550px;
+    border-radius: 3rem;
+    
+    transition: 2s;
+    background-color: #0e77a8;
+    
+    
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
 }
+
+
 
 
 @media (max-width: 600px) {
